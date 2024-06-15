@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Multi-step Register</title>
+        <link rel="stylesheet" href="./style.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Sora&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <img class="image1" src="./img/blur-radial.svg" alt="blur-radial">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="container_1">
+                <h3>Register</h3>
+                <form>
+                    <div class="para1">                    
+                        <label class="name" for="name">Name</label>
+                        <br>
+                        <input type="text" id ="name" placeholder="enter your name" >
+                    </div>
+                    <div class="para2">                    
+                        <label class="email" for="email">Email</label>
+                        <br>
+                        <input type="text" id ="email" placeholder="example@gmail.com" >
+                    </div>
+                    <div class="btn">
+                        <button id = "submit-btn">Continue</button>
+                    </div>
+                </form>        
+            </div>
+          
+            <div class="container_2">
+                <form id="checkboxForm">
+                    <h3>Which topics you are interested in?</h3>
+                    <input type="checkbox" id="topics1"  class="checkbox" value="Software Development">
+                    <label class ="label_2" for="topics1"> Software Development</label>
+                    <input type="checkbox" id="topics2" class="checkbox" value="User Experience">
+                    <label class ="label_2" for="topics2"> User Experience</label>
+                    <input type="checkbox" id="topics3" class="checkbox" value="Graphic Design">
+                    <label class ="label_2" for="topics3" > Graphic Design</label>
+                    <div class="btn" id="btn2">
+                        <button id = "submit-btn2">Continue</button>
+                    </div>
+                </form>  
+            </div>
+          
+            <div class="container_3">
+                <h3>Summary</h3>
+                <div class="info">
+                <div><span class="para3">Name: </span><span id="input1"></span></div>
+                <div><span class="para3">Email: </span><span id="input2"></span></div>
+                </div>
+                <div class="info2">
+                    <div ><span class="para4">Topics:</span><div id="input3"></div></div>
+                </div>
+                <div class="btn">
+                    <button id = "submit-btn3">Confirm</button>
+                </div>
+            </div>
+        <br>
+          
+          <!-- The dots/circles -->
+        <div class="indicator">
+            <div class="container_number"><span id="container_num">Step 1 of 3</span></div>
+            <div class="dot">
+                <span id="dot1"></span>
+                <span id="dot2"></span>
+                <span id="dot3"></span>
+            </div>
+        </div>
+        <img class="image2" src="./img/blur-radial.svg" alt="blur-radial">  
+        <div id="alertBox" class="hidden">
+            <div class="alertContent">
+                <p>Form submitted successfully!</p>
+                <button id = "redirect-btn">Continue</button>
+        </div>  
+          <script src="script.js"></script>
+    </body>
+
+</html>
